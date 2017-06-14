@@ -7,33 +7,36 @@
     tools:context="com.ed.scripix.Menu">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/tp_btn_browse_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="browse_books"
         android:text="@string/tp_btn_browse"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tp_btn_about_id"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tp_btn_game_id" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/tp_btn_game_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="game_setup"
         android:text="@string/tp_btn_game"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tp_btn_browse_id"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/tp_btn_about_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="show_about"
         android:text="@string/tp_btn_about"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tp_btn_browse_id" />
 
 </android.support.constraint.ConstraintLayout>
